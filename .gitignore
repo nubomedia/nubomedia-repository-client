@@ -1,0 +1,7 @@
+*.classpath
+.project
+*.prefs
+*.class
+target/maven-archiver/pom.properties
+*.lst
+target/kurento-repository-client-extended-0.0.1-SNAPSHOT.jar
