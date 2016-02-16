@@ -1,12 +1,23 @@
+/*******************************************************************************
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ *
+ *******************************************************************************/
 package de.fhg.fokus.nubomedia.paas;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 
- * @author Alice Cheambe <alice.cheambe[at]fokus.fraunhofer.de>
  *
+ *  @author Alice Cheambe <alice.cheambe[at]fokus.fraunhofer.de>
+ * 
  */
 public class CloudRepositoryProfile {
 	
@@ -17,26 +28,25 @@ public class CloudRepositoryProfile {
 	private String repositoryUser;
 	private String repositoryPassword;
 	private String repositoryServiceURI;
-	private int repositoryPort = 27018;
+	private int repositoryPort;
 
 	public CloudRepositoryProfile() {
 		super();
 		logger.info("Instatiating the Cloud Repository Profile with the following properties;\n CLOUDREPO_IP: "
 		+ System.getenv("CLOUDREPO_IP")+"\nCLOUDREPO_USER: "
 		+ System.getenv("CLOUDREPO_USER")+"\n CLOUDREPO_PASSWORD: "
-		+ System.getenv("CLOUDREPO_PASSWORD"));
-		
-		//max = (a > b) ? a : b;
+		+ System.getenv("CLOUDREPO_PASSWORD")+"\n CLOUDREPO_PORT: "
+				+ System.getenv("CLOUDREPO_PORT"));
+				
 		repositoryAddress = System.getenv("CLOUDREPO_IP");
 		repositoryUser = System.getenv("CLOUDREPO_USER");
 		repositoryPassword = System.getenv("CLOUDREPO_PASSWORD");
+		repositoryPort =  Integer.parseInt((System.getenv("CLOUDREPO_PORT")!=null)?  System.getenv("CLOUDREPO_PORT"): "27018");
 		
 		if(repositoryAddress == null)
 			instance  = null;
 		else{
-			//final static String DEFAULT_REPOSITORY_SERVER_URI = "http://localhost:7676";
-			this.repositoryServiceURI = "http://"+repositoryAddress+":"+repositoryPort;
-			
+			this.repositoryServiceURI = "http://"+repositoryAddress+":"+repositoryPort;			
 			instance = this;
 		}		
 	}
