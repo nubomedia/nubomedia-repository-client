@@ -7,7 +7,7 @@ This repository includes the open source implementation of the "org.kurento.clie
 Issue tracker
 -------------
 
-Issues and bug reports should be posted to the [GitHub Issue List](https://github.com/fhg-fokus-nubomedia/kurento-repository-client-extended/issues)
+Issues and bug reports should be posted to the [GitHub Issue List](https://github.com/fhg-fokus-nubomedia/nubomedia-repository-client/issues)
 
 Licensing and distribution
 --------------------------
@@ -24,7 +24,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Support
--------
+Support and Contribution
+-------------------------
 
-Need some support, then get in contact with us!
+Need some support, wish to contribute? Then get in contact with us via our [mailinglist](mailto:nubomedia@fokus.fraunhofer.de)!
