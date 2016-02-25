@@ -5,15 +5,32 @@
 	<artifactId>nubomedia-repository-client</artifactId>
 	<version>1.0</version>
 	<name>nubomedia-repository-client</name>
-	<description>Extends the kurento repository API to work in the NUBOMEDIA environment</description>
-
+	<description>Extends the kurento repository clientI to work on the NUBOMEDIA cloud environment</description>
+	<organization>
+		<name>Fraunhofer FOKUS</name>
+		<url>www.fokus.fraunhofer.de</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>Cheambe Alice</name>
+			<email>alice.cheambe@fokus.fraunhofer.de</email>
+			<organization>Fraunhofer FOKUS</organization>
+			<organizationUrl>http://www.fokus.fraunhofer.de</organizationUrl>
+		</developer>
+	</developers>
 	<properties>
 		<java.version>1.7</java.version>
 	</properties>
 	<scm>
-		<connection>scm:git:git@github.com:fhg-fokus-nubomedia/nubomedia-repository-client.git</connection>
-		<developerConnection>scm:git:git@github.com:fhg-fokus-nubomedia/nubomedia-repository-client.git</developerConnection>
-		<url>git@github.com:fhg-fokus-nubomedia/nubomedia-repository-client.git</url>
+		<connection>nubomedia-repository-client.git</connection>
+		<developerConnection>nubomedia-repository-client.git</developerConnection>
+		<url>nubomedia-repository-client.git</url>
 	</scm>
 	<distributionManagement>
 		<snapshotRepository>
@@ -106,4 +123,5 @@
 			<version>6.2.1</version>
 		</dependency>
 	</dependencies>
+	<url>www.nubomedia.eu</url>
 </project>
