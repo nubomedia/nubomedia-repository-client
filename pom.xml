@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.fhg.fokus.nubomedia</groupId>
 	<artifactId>nubomedia-repository-client</artifactId>
-	<version>1.0</version>
+	<version>6.5.0</version>
 	<name>nubomedia-repository-client</name>
 	<description>Extends the kurento repository clientI to work on the NUBOMEDIA cloud environment</description>
 	<organization>
@@ -23,6 +23,12 @@
 			<organization>Fraunhofer FOKUS</organization>
 			<organizationUrl>http://www.fokus.fraunhofer.de</organizationUrl>
 		</developer>
+                <developer>
+                        <name>Giuseppe Carella</name>
+                        <email>giuseppe.a.carella@tu-berlin.de</email>
+                        <organization>TU Berlin</organization>
+                        <organizationUrl>https://www.tu-berlin.de/</organizationUrl>
+                </developer>
 	</developers>
 	<properties>
 		<java.version>1.7</java.version>
@@ -30,7 +36,7 @@
 	<scm>
 		<connection>nubomedia-repository-client.git</connection>
 		<developerConnection>nubomedia-repository-client.git</developerConnection>
-		<url>nubomedia-repository-client.git</url>
+		<url>https://github.com/fhg-fokus-nubomedia/nubomedia-repository-client.git</url>
 	</scm>
 	<distributionManagement>
 		<snapshotRepository>
@@ -120,7 +126,7 @@
 		<dependency>
 			<groupId>org.kurento</groupId>
 			<artifactId>kurento-repository-client</artifactId>
-			<version>6.2.1</version>
+			<version>6.5.0</version>
 		</dependency>
 	</dependencies>
 	<url>www.nubomedia.eu</url>
