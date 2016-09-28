@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.fhg.fokus.nubomedia</groupId>
 	<artifactId>nubomedia-repository-client</artifactId>
-	<version>6.5.0</version>
+	<version>6.6.0-SNAPSHOT</version>
 	<name>nubomedia-repository-client</name>
 	<description>Extends the kurento repository clientI to work on the NUBOMEDIA cloud environment</description>
 	<organization>
@@ -126,7 +126,7 @@
 		<dependency>
 			<groupId>org.kurento</groupId>
 			<artifactId>kurento-repository-client</artifactId>
-			<version>6.5.0</version>
+			<version>6.6.0</version>
 		</dependency>
 	</dependencies>
 	<url>www.nubomedia.eu</url>
